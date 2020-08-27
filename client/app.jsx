@@ -26,6 +26,7 @@ class App extends React.Component {
       <div id='wrapper'>
         <div id='title'>Checkers</div>
         <div id='turn'>{this.state.currPlayer}'s Turn</div>
+        <Board id='board' currPlayer={this.state.currPlayer} changePlayer={this.changePlayer}/>
       </div>
     );
   }

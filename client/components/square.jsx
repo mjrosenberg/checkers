@@ -6,7 +6,11 @@ class Square extends React.Component{
     this.state = {}
   }
   render(){
-
+    return (
+      <div class='square' id={`${this.props.row}${this.props.col}`}>
+        Hello
+      </div>
+    );
   }
 }
 
