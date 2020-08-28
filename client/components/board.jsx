@@ -15,14 +15,14 @@ class Board extends React.Component{
         {
           this.state.rows.map((row) => {
             console.log('row is', row);
-            // this.state.cols.map((col) => {
+            this.state.cols.map((col) => {
               // doesn't appear with double map and only one row appears with the for loop
               //console.logs are printing correctly though
-            for (let col = 0; col < 8; col++){
+            // for (let col = 0; col < 8; col++){
               console.log('col is', col);
               return (<Square row={row} col={col} currPlayer={this.state.currPlayer} changePlayer={this.changePlayer}/>);
-            // })
-            }
+            })
+            // }
           })
         }
       </div>
